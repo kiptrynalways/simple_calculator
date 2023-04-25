@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+        <link rel="stylesheet" href="scicalc.css">
+</head>
+
+<body>
+    <script>
+        const buttons = document.querySelectorAll(".button");
+        const display = document.querySelector("#screen");
+    
+    
+        buttons.forEach(function (button) {
+            button.addEventListener("click", function() {
+                const buttonValue = this.textContent;
+                screen.value += buttonValue;
+            });
+        });
+    </script>
+    <h1>Scientific Calculator for Advanced Mathematics</h1>
+
+    <div class="calculator">
+        <input type="text" id="screen" maxlength="20">
+        <div class="calc">
+
+            <div class="funct1">
+                <button class="but1">C</button>
+                <button class="but1">(</button>
+                <button class="but1">)</button>
+                <button class="but1">7</button>
+                <button class="butb">8</button>
+                <button class="butb">9</button>
+                <button class="butb">4</button>
+                <button class="butb">5</button>
+                <button class="butb">6</button>
+                <button class="butb">1</button>
+                <button class="butb">2</button>
+                <button class="butb">3</button>
+                <button class="butb">±</button>
+                <button class="butb">0</button>
+                <button class="butb">.</button>
+                <button class="butred">DELETE</button>
+                <button class="butwhite">x<sup>2</sup></button>
+                <button class="butwhite">x<sup>3</sup></button>
+
+            </div>
+            <div class="funct2">
+                <button class="but1">
+                    <=< /button>
+                        <button class="but1">>=</button>
+                        <button class="but1">x!</button>
+                        <button class="but1">x^</button>
+                        <button class="butt">*</button>
+                        <button class="butt">&#8728</button>
+                        <button class="butt">In</button>
+                        <button class="butt">e</button>
+                        <button class="butt">+</button>
+                        <button class="butt">%</button>
+                        <button class="butt">log</button>
+                        <button class="butt">cos</button>
+                        <button class="butt">-</button>
+                        <button class="butt">&#8730</button>
+                        <button class="butt">sin</button>
+                        <button class="butt">tan</button>
+                        <button class="butt">/</button>
+                        <button class="butt">&#8508</button>
+                        <button class="butt">rad</button>
+                        <button class="bute">=</button>
+            </div>
+</body>
+
+
+</html>
